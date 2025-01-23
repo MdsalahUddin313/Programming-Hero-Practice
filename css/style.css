@@ -1,0 +1,218 @@
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.root{
+    --primary_color: #FEA301
+    --secondary_color: #F7F7F7
+}
+
+.container{
+    background-color:white ;
+    margin-left: 80px;
+    margin-right: 80px;
+    max-width: 100%;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_menu_items{
+    gap:40px
+}
+.nav_menu_items,.navbar_button_area{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul>li{
+     list-style: none;
+}
+.logo{
+    height: 65px;
+}
+
+.nav_menu_items, li>a{
+    text-decoration: none;
+    font-family: "Quicksand", serif;
+    font-weight: bold;
+    color: #FEA301;
+    font-size: 20px;
+}
+.nav_menu_items, li>a:hover{
+    text-decoration: none;
+    font-family: "Quicksand", serif;
+    font-weight: bold;
+    color: skyblue;    
+    font-size: 20px;
+}
+.hamburger_icon{
+    display: none;
+}
+.contact_btn{
+    border-radius: 15px;
+    padding: 10px 35px 10px 35px;
+    background-color: #FEA301;
+    color: beige;
+    font-weight: bold;
+    border-width: 0;
+}
+.contact_btn:hover{
+    border-radius: 15px;
+    padding: 10px 35px 10px 35px;
+    background-color: beige;
+    color: #FEA301;
+    font-weight: bold;
+    border-width: 1px;
+    border-color: #FEA301;
+    cursor: pointer;
+}
+/* 
+banner section */
+.banner_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.banner_hero_image{
+    width: 70%;
+    padding: 10px;
+    justify-content: center;
+}
+.enroll_btn{
+    border-radius: 15px;
+    padding: 10px 35px 10px 35px;
+    background-color: #0a0a0a;
+    color: beige;
+    font-weight: bold;
+    border-width: 0;
+}
+.enroll_btn:hover{
+    border-radius: 15px;
+    padding: 10px 35px 10px 35px;
+    background-color: beige;
+    color: #0a0a0a;
+    font-weight: bold;
+    border-width: 1px;
+    border-color: #0a0a0a;
+    cursor: pointer;
+}
+.banner_section h1{
+    font-size: 40px;
+}
+/* 
+standard curricullam section */
+.Standard_Curriculam{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.standard_curricullam_cards{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mutable_text{
+    color: rgb(165, 164, 164);
+}
+.scard_1{
+    background: linear-gradient(to bottom, #06e3eb3a, #ffffff);
+    padding: 30px;
+    border-radius: 15px;
+}
+.scard_2{
+    background: linear-gradient(to bottom, #c7b70852, #ffffff);
+    padding: 30px;
+    border-radius: 15px;
+}
+.scard_3{
+    background: linear-gradient(to bottom, #cf26f55d, #ffffff);
+    padding: 30px;
+    border-radius: 15px;
+}
+.arrow_btn{
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.arrow_btn button{
+    padding: 15px 25px;
+    border-radius: 85px;
+    color: white;
+    font-weight: bold;
+    background-color: #FEA301;
+    border: 0px;    
+    font-size: 20px;
+    gap:15px;
+}
+.arrow_btn button:hover{
+    padding: 15px 25px;
+    border-radius: 85px;
+    color: #FEA301;
+    font-weight: bold;
+    background-color:white ;
+    border-width: 1px; 
+    border-color: #FEA301;
+    cursor: pointer;
+    font-size: 20px;
+    gap:15px;
+}
+/* 
+Our stories  */
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.gallery_item_1{
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container{
+        margin-left: 20px;
+        margin-right: 20px;        
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger_icon{
+        display:block;
+        width: 15%;
+        justify-content: space-between;
+        margin-left:auto ;
+    }
+    .nav_menu_items,.contact_btn {
+        display: none;
+    }
+    .banner_section{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner_hero_image img{
+        width: 100%;
+        justify-content: center;
+        padding: 8px;   
+    }
+    .standard_curricullam_cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
