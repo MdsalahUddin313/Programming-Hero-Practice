@@ -1,0 +1,54 @@
+
+@media only screen and (max-width: 768px) {
+    .container{
+        margin-left: 20px;
+        margin-right: 20px;        
+    }
+    .card_container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    max-width:fit-content;
+    display: grid;    
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .gcards{
+     max-width: fit-content;
+      justify-content: center;
+      transition: transform 0.3s;
+ }
+    .hamburger_icon{
+        display:block;
+        width: 15%;
+        justify-content: space-between;
+        margin-left:auto ;
+    }
+    .nav_menu_items,.contact_btn {
+        display: none;
+    }
+    .banner_section{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner_hero_image img{
+        width: 100%;
+        justify-content: center;
+        padding: 8px;   
+    }
+    .standard_curricullam_cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_part{
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
+    .card1{
+        display: none;
+    }
+}
