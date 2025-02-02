@@ -175,8 +175,8 @@ Our stories  */
     box-sizing: border-box;
     margin: 0;
     background-image: url("../assets/bg.png");
+    background-color: linear-gradient(to top,#fea10162,#f5d3973a);
     background-size: cover;
-    background-color: #fea10157;
     padding-top: 80px;
     padding-bottom: 80px;
 }
